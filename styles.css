@@ -1,0 +1,76 @@
+/* General page style */
+body {
+  font-family: Arial, sans-serif;
+  background: pink;
+  color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Music player box */
+.music-container {
+  background: pink#1e1e1e;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Album art */
+.img-container {
+  margin: 20px 0;
+}
+
+.img-container img {
+  width: 200px;
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Progress bar */
+.progress-container {
+  background: #333;
+  height: 5px;
+  border-radius: 5px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.progress {
+  background: #f0f8c9;
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+}
+
+/* Time text */
+.time-display {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.navigation button {
+  background: pink;
+  border: black;
+  color: rgb(228, 178, 222);
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.navigation button:disabled {
+  color: #b7cbec;
+  cursor: not-allowed;
+}
